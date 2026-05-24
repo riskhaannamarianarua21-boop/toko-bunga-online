@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7fb;
+}
+
+header {
+    height: 90px;
+    background: white;
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flower {
+    font-size: 42px;
+    color: #d6336c;
+}
+
+.logo h2 {
+    color: #9b174c;
+    font-size: 28px;
+}
+
+.logo p {
+    font-size: 13px;
+    color: #666;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart {
+    padding: 10px 22px;
+    border: 1px solid #d6336c;
+    background: white;
+    color: #c2185b;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+main {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.card {
+    width: 900px;
+    background: white;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.left {
+    width: 45%;
+    background: #fde8f1;
+    padding: 60px 50px;
+}
+
+.left h1 {
+    color: #c2185b;
+    font-size: 34px;
+}
+
+.garis {
+    width: 50px;
+    height: 3px;
+    background: #d6336c;
+    margin: 18px 0;
+}
+
+.left p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.left img {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.right {
+    width: 55%;
+    padding: 55px 45px;
+}
+
+.right h2 {
+    color: #c2185b;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #9b174c;
+}
+
+.atau {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.atau span {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.atau p {
+    color: #777;
+}
+
+.login {
+    text-align: center;
+}
+
+.login a {
+    color: #c2185b;
+    font-weight: bold;
+}
+
+footer {
+    height: 60px;
+    background: #9b174c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}

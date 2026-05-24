@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #fff7fb;
+    color: #333;
+}
+
+header{
+    height: 90px;
+    background: white;
+    padding: 0 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flower{
+    font-size: 42px;
+    color: #d6336c;
+}
+
+.logo h2{
+    color: #9b174c;
+    font-size: 28px;
+}
+
+.logo p{
+    font-size: 13px;
+    color: #666;
+}
+
+nav a{
+    margin-left: 22px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #c2185b;
+}
+
+.logout{
+    background: #c2185b;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.logout:hover{
+    background: #9b174c;
+    color: white;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 65px 90px;
+    background: #fde8f1;
+}
+
+.hero-text{
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 42px;
+    color: #c2185b;
+    margin-bottom: 18px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 14px 28px;
+
+    background: #c2185b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: #9b174c;
+}
+
+.hero-img img{
+    width: 360px;
+    border-radius: 15px;
+}
+
+.section-title{
+    text-align: center;
+    padding: 45px 20px 20px;
+}
+
+.section-title h2{
+    font-size: 32px;
+    color: #c2185b;
+}
+
+.section-title p{
+    margin-top: 8px;
+    color: #666;
+}
+
+.produk-container{
+    padding: 30px 70px 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.produk-card{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+}
+
+.produk-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.produk-info{
+    padding: 20px;
+}
+
+.produk-info h3{
+    color: #9b174c;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.harga{
+    color: #c2185b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.stok{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn-detail{
+    display: block;
+    text-align: center;
+
+    padding: 12px;
+
+    background: #c2185b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.btn-detail:hover{
+    background: #9b174c;
+}
+
+footer{
+    height: 60px;
+    background: #9b174c;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+}
