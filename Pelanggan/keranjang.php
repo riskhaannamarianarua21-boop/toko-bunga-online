@@ -2,6 +2,8 @@
 session_start();
 include "../koneksi.php";
 
+/** @var mysqli $conn */
+
 if(!isset($_SESSION['status_login'])){
     header("location:../login.php");
     exit;
@@ -36,7 +38,8 @@ WHERE keranjang.id_pelanggan='$id_pelanggan'");
     <nav>
         <a href="index.php">Beranda</a>
         <a href="produk.php">Produk</a>
-        <a href="keranjang.php">Keranjang</a>
+        <a href="keranjang.php" class="active">Keranjang</a>
+        <a href="checkout.php">Checkout</a>
         <a href="../logout.php" class="logout">Logout</a>
     </nav>
 </header>

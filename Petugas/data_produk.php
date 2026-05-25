@@ -88,7 +88,7 @@ $produk = mysqli_query($conn,
                 <td><?php echo $no++; ?></td>
 
                 <td>
-                    <img src="../gambar_produk/<?php echo $row['foto_produk']; ?>" class="gambar">
+                    <img src="../gambar_produk/<?php echo $row['gambar']; ?>" class="gambar">
                 </td>
 
                 <td>

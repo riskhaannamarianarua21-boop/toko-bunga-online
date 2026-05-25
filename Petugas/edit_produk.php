@@ -143,7 +143,7 @@ if(isset($_POST['update'])){
 
             <label>Gambar Saat Ini</label>
 
-            <img src="../gambar_produk/<?php echo $data['foto_produk']; ?>" class="preview">
+            <img src="../gambar_produk/<?php echo $data['gambar']; ?>" class="preview">
 
             <label>Upload Gambar Baru</label>
 

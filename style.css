@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 90px;
+    height: 70px;
     background: white;
     padding: 0 70px;
     display: flex;
@@ -22,29 +22,43 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    margin-left: -60px;
 }
 
 .flower {
-    font-size: 42px;
+    font-size: 34px;
     color: #d6336c;
 }
 
 .logo h2 {
     color: #9b174c;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .logo p {
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
 }
 
 nav a {
-    margin: 0 20px;
+    margin: 0 10px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #fde8f1;
+    color: #c2185b;
+}
+
+nav a.active {
+    background-color: #c2185b;
+    color: white;
 }
 
 .cart {
@@ -57,15 +71,16 @@ nav a {
 }
 
 main {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 115px);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 10px 40px 0;
 }
 
 .card {
     width: 900px;
+    max-height: 620px;
     background: white;
     display: flex;
     border-radius: 12px;
@@ -76,7 +91,7 @@ main {
 .left {
     width: 45%;
     background: #fde8f1;
-    padding: 60px 50px;
+    padding: 40px 40px;
 }
 
 .left h1 {
@@ -97,13 +112,13 @@ main {
 }
 
 .left img {
-    width: 100%;
-    margin-top: 45px;
+    width: 85%;
+    margin-top: 25px;
 }
 
 .right {
     width: 55%;
-    padding: 55px 45px;
+    padding: 35px 40px;
 }
 
 .right h2 {
@@ -171,11 +186,31 @@ input {
 }
 
 footer {
-    height: 60px;
+    height: 45px;
+    margin-top: 0;
     background: #9b174c;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 35px;
+    font-size: 15px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 45px;
+    margin-bottom: 22px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #777;
 }
