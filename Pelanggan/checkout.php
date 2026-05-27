@@ -38,9 +38,9 @@ $total = 0;
     </div>
 
     <nav>
+        <a href="keranjang.php" class="cart-icon">🛒</a>
         <a href="index.php">Beranda</a>
         <a href="produk.php">Produk</a>
-        <a href="keranjang.php">Keranjang</a>
         <a href="checkout.php" class="active">Checkout</a>
         <a href="../logout.php" class="logout">Logout</a>
     </nav>

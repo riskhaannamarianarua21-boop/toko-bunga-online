@@ -9,7 +9,11 @@ if (!isset($_SESSION['status_login'])) {
     exit;
 }
 
-$produk = mysqli_query($conn, "SELECT * FROM produk ORDER BY id_produk DESC");
+$keyword = isset($_GET['cari']) ? $_GET['cari'] : "";
+
+$produk = mysqli_query($conn, "SELECT * FROM produk 
+WHERE nama_produk LIKE '%$keyword%'
+ORDER BY id_produk DESC");
 
 if (!$produk) {
     die("Query produk gagal: " . mysqli_error($conn));
@@ -37,9 +41,13 @@ if (!$produk) {
         </div>
 
         <nav>
+            <form action="produk.php" method="GET" class="search-form">
+                <input type="text" name="cari" placeholder="🔍 Cari produk..." value="">
+                <button type="submit">Cari</button>
+            </form>
+            <a href="keranjang.php" class="cart-icon">🛒</a>
             <a href="index.php">Beranda</a>
             <a href="produk.php" class="active">Produk</a>
-            <a href="keranjang.php">Keranjang</a>
             <a href="checkout.php">Checkout</a>
             <a href="../logout.php" class="logout">Logout</a>
         </nav>

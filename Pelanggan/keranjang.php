@@ -36,9 +36,9 @@ WHERE keranjang.id_pelanggan='$id_pelanggan'");
     </div>
 
     <nav>
+        <a href="keranjang.php" class="cart-icon active">🛒</a>
         <a href="index.php">Beranda</a>
         <a href="produk.php">Produk</a>
-        <a href="keranjang.php" class="active">Keranjang</a>
         <a href="checkout.php">Checkout</a>
         <a href="../logout.php" class="logout">Logout</a>
     </nav>

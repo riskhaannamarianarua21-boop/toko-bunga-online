@@ -10,35 +10,34 @@ body{
 }
 
 header{
-    height: 85px;
+    height: 70px;
     background: white;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 70px;
-
     box-shadow: 0 3px 15px rgba(0,0,0,0.08);
 }
 
 .logo{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+    margin-left: -60px;
 }
 
 .flower{
-    font-size: 42px;
+    font-size: 34px;
     color: #d6336c;
 }
 
 .logo h2{
     color: #9b174c;
+    font-size: 24px;
 }
 
 .logo p{
-    font-size: 13px;
+    font-size: 12px;
     color: #666;
 }
 
@@ -55,93 +54,78 @@ nav a:hover{
 
 .detail-container{
     padding: 60px 80px;
-
     display: flex;
     justify-content: center;
 }
 
 .detail-card{
-    width: 1100px;
-
+    width: 1000px;
     background: white;
-
     border-radius: 15px;
-
     overflow: hidden;
-
     display: flex;
-
+    align-items: stretch;
     box-shadow: 0 5px 18px rgba(0,0,0,0.12);
 }
 
 .gambar{
     width: 50%;
+    height: 520px;
 }
 
 .gambar img{
     width: 100%;
     height: 100%;
-
     object-fit: cover;
+    cursor: pointer;
 }
 
 .detail-info{
     width: 50%;
-
-    padding: 45px;
+    padding: 45px 45px 90px;
+    position: relative;
 }
 
 .detail-info h1{
     color: #9b174c;
-
-    font-size: 38px;
-
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .harga{
     color: #c2185b;
-
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
-
     margin-bottom: 15px;
 }
 
 .stok{
     margin-bottom: 30px;
-
     font-size: 18px;
 }
 
 .deskripsi h3{
     color: #9b174c;
-
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .deskripsi p{
     color: #666;
-
     line-height: 1.8;
-
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+    font-size: 15px;
 }
 
 .btn{
     width: 100%;
-
     padding: 15px;
-
     border: none;
     border-radius: 10px;
-
     background: #c2185b;
     color: white;
-
     font-size: 17px;
     font-weight: bold;
-
     cursor: pointer;
 }
 
@@ -150,52 +134,121 @@ nav a:hover{
 }
 
 footer{
-    height: 60px;
-
+    height: 45px;
+    margin-top: 0;
     background: #9b174c;
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 35px;
+    font-size: 15px;
 }
 
 .qty{
-    width: 100%;
-    padding: 12px;
-
-    margin-bottom: 20px;
-
+    width: 65px;
+    height: 42px;
+    padding: 8px;
+    margin-top: 18px;
+    margin-bottom: 35px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    font-size: 15px;
 }
 
 .btn-kembali{
     display: inline-block;
-
     margin-top: 15px;
-
     width: 100%;
-
     text-align: center;
-
     padding: 16px;
-
     background: #777;
-
     color: white;
-
     text-decoration: none;
-
     border-radius: 10px;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
 
 .btn-kembali:hover{
     background: #555;
+}
+
+.cart-icon{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+.cart-icon:hover{
+    background: #fde8f1;
+}
+
+.modal-gambar{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-gambar img{
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 10px;
+}
+
+.modal-gambar span{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.info-produk{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+.info-produk a{
+    color: #18a558;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aksi-detail{
+    display: flex;
+    gap: 0;
+    width: calc(80% + 110px);
+    margin-left: -45px;
+
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+}
+
+.aksi-detail .btn,
+.aksi-detail .btn-kembali{
+    width: 50%;
+    margin-top: 0;
+    border-radius: 0;
+    padding: 22px 10px;
+    font-size: 15px;
+}
+
+.aksi-detail .btn-kembali{
+    border-bottom-left-radius: 0;
+}
+
+.aksi-detail .btn{
+    border-bottom-right-radius: 12px;
 }
