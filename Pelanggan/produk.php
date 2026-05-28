@@ -44,6 +44,10 @@ if (!$produk) {
             <form action="produk.php" method="GET" class="search-form">
                 <input type="text" name="cari" placeholder="🔍 Cari produk..." value="">
                 <button type="submit">Cari</button>
+
+                <?php if ($keyword != "") { ?>
+                    <a href="produk.php" class="btn-reset">Reset</a>
+                <?php } ?>
             </form>
             <a href="keranjang.php" class="cart-icon">🛒</a>
             <a href="index.php">Beranda</a>

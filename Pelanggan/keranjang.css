@@ -8,6 +8,9 @@ body{
     font-family: Arial, sans-serif;
     background: #fff7fb;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -74,9 +77,9 @@ nav a.active{
 }
 
 .hero{
-    background: #fde8f1;
     text-align: center;
-    padding: 45px 20px;
+    padding: 25px 20px;
+    background: #fde8f1;
 }
 
 .hero h1{
@@ -91,6 +94,7 @@ nav a.active{
 
 main{
     padding: 50px 80px;
+    flex: 1;
 }
 
 .cart-box{
@@ -114,11 +118,13 @@ th{
     color: white;
     padding: 16px;
     text-align: center;
+    border-right: 1px solid #f7c7d8;
 }
 
 td{
     padding: 16px;
     border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
     text-align: center;
 }
 
@@ -173,4 +179,40 @@ footer{
     align-items: center;
     gap: 35px;
     font-size: 15px;
+}
+
+.btn-hapus{
+    background: #777;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-hapus:hover{
+    background: #333;
+}
+
+th:last-child,
+td:last-child{
+    border-right: none;
+}
+
+.total-row td{
+    border-right: 1px solid #f1c8d7;
+}
+
+.total-row td:last-child{
+    border-right: none;
+}
+
+.label-total{
+    text-align: center;
+    border-right: none !important;
+}
+
+.harga-total{
+    border-left: 1px solid #f1c8d7;
 }
