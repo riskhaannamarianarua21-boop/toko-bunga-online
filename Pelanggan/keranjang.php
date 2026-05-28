@@ -44,7 +44,7 @@ WHERE keranjang.id_pelanggan='$id_pelanggan'"
             <a href="index.php">Beranda</a>
             <a href="produk.php">Produk</a>
             <a href="checkout.php" id="navCheckout">Checkout</a>
-            <a href="../logout.php" class="logout">Logout</a>
+            <a href="pengaturan.php" class="settings-icon">⚙️</a>
         </nav>
     </header>
 

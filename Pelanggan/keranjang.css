@@ -216,3 +216,16 @@ td:last-child{
 .harga-total{
     border-left: 1px solid #f1c8d7;
 }
+
+.settings-icon{
+    color: #777;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.settings-icon:hover{
+    background: #fde8f1;
+    color: #c2185b;
+}

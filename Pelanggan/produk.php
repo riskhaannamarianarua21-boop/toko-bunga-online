@@ -53,7 +53,7 @@ if (!$produk) {
             <a href="index.php">Beranda</a>
             <a href="produk.php" class="active">Produk</a>
             <a href="checkout.php">Checkout</a>
-            <a href="../logout.php" class="logout">Logout</a>
+            <a href="pengaturan.php" class="settings-icon">⚙️</a>
         </nav>
     </header>
 

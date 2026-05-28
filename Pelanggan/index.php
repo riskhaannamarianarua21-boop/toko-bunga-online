@@ -37,7 +37,7 @@ $produk = mysqli_query($conn, "SELECT * FROM produk ORDER BY id_produk DESC LIMI
             <a href="index.php" class="active">Beranda</a>
             <a href="produk.php">Produk</a>
             <a href="checkout.php">Checkout</a>
-            <a href="../logout.php" class="logout">Logout</a>
+            <a href="pengaturan.php" class="settings-icon">⚙️</a>
         </nav>
     </header>
 

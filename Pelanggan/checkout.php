@@ -55,7 +55,7 @@ if ($items != '') {
             <a href="index.php">Beranda</a>
             <a href="produk.php">Produk</a>
             <a href="checkout.php" class="active">Checkout</a>
-            <a href="../logout.php" class="logout">Logout</a>
+            <a href="pengaturan.php" class="settings-icon">⚙️</a>
         </nav>
     </header>
 

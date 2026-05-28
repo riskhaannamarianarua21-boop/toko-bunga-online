@@ -219,3 +219,16 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+.settings-icon{
+    color: #777;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.settings-icon:hover{
+    background: #fde8f1;
+    color: #c2185b;
+}
