@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS toko_online;
-USE toko_online;
-
 -- =========================
 -- TABEL PELANGGAN
 -- =========================
