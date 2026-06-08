@@ -10,10 +10,10 @@ body{
 }
 
 .setting-box{
-    width: 500px;
+    width: 460px;
     background: white;
-    margin: 60px auto;
-    padding: 35px;
+    margin: 25px auto;
+    padding: 25px;
     border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
@@ -21,7 +21,8 @@ body{
 .setting-box h2{
     color: #c2185b;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
+    font-size: 24px;
 }
 
 label{
@@ -32,15 +33,15 @@ label{
 
 input{
     width: 100%;
-    padding: 13px;
-    margin-bottom: 18px;
+    padding: 10px;
+    margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
 
 .btn-save{
     width: 100%;
-    padding: 14px;
+    padding: 11px;
     background: #c2185b;
     color: white;
     border: none;
@@ -53,8 +54,8 @@ input{
 .btn-back{
     display: block;
     text-align: center;
-    margin-top: 15px;
-    padding: 13px;
+    margin-top: 10px;
+    padding: 11px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
@@ -68,4 +69,64 @@ input{
 .btn-back{
     background: #fde8f1;
     color: #c2185b;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media screen and (max-width:768px){
+
+    .setting-box{
+        width:95%;
+        padding:25px;
+        margin:30px auto;
+    }
+
+    .setting-box h2{
+        font-size:28px;
+        text-align:center;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width:480px){
+
+    body{
+        padding:15px;
+    }
+
+    .setting-box{
+        width:100%;
+        padding:20px;
+        border-radius:15px;
+    }
+
+    .setting-box h2{
+        font-size:24px;
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    label{
+        font-size:14px;
+    }
+
+    input{
+        width:100%;
+        font-size:14px;
+        padding:10px;
+    }
+
+    .btn-save,
+    .btn-logout,
+    .btn-back{
+        width:100%;
+        display:block;
+        text-align:center;
+        margin-top:10px;
+        padding:12px;
+        font-size:14px;
+    }
 }

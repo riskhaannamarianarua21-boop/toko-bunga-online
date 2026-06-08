@@ -1,489 +1,163 @@
+<style>
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background: #fff7fb;
-    color: #333;
+    background:#fff7fb;
 }
 
 header{
-    height: 85px;
-    background: white;
-    padding: 0 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    background:#fff;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
 .flower{
-    font-size: 42px;
-    color: #d6336c;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#c2185b;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
 }
 
 .logo h2{
-    color: #9b174c;
+    color:#c2185b;
 }
 
 .logo p{
-    font-size: 13px;
-    color: #666;
+    color:#666;
+    font-size:14px;
 }
 
 nav a{
-    margin-left: 22px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    text-decoration:none;
+    color:#555;
+    margin-left:20px;
+    font-weight:bold;
 }
 
 nav a:hover{
-    color: #c2185b;
+    color:#c2185b;
 }
 
 .logout{
-    background: #c2185b;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 8px;
+    color:red;
 }
 
 .hero{
-    background: #fde8f1;
-    padding: 50px 80px;
-    text-align: center;
+    background:#f7dfe9;
+    padding:60px 20px;
+    text-align:center;
 }
 
 .hero h1{
-    color: #c2185b;
-    font-size: 36px;
-    margin-bottom: 10px;
+    color:#c2185b;
+    font-size:50px;
+    margin-bottom:10px;
 }
 
 .hero p{
-    color: #666;
-}
-
-main{
-    padding: 50px 80px;
-}
-
-.dashboard-card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.card{
-    background: white;
-    padding: 35px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-.card h3{
-    color: #9b174c;
-    margin-bottom: 15px;
-}
-
-.card p{
-    font-size: 40px;
-    font-weight: bold;
-    color: #c2185b;
-}
-
-.menu-box{
-    background: white;
-    margin-top: 40px;
-    padding: 35px;
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-.menu-box h2{
-    color: #c2185b;
-    margin-bottom: 20px;
-}
-
-.menu-list{
-    display: flex;
-    gap: 20px;
-}
-
-.menu-list a{
-    flex: 1;
-    text-align: center;
-    padding: 15px;
-    background: #c2185b;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.menu-list a:hover{
-    background: #9b174c;
-}
-
-footer{
-    height: 60px;
-    background: #9b174c;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color:#555;
+    font-size:18px;
 }
 
 .table-box{
-    background: white;
-
-    padding: 30px;
-
-    border-radius: 14px;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    overflow-x:auto;
 }
 
 .table-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 25px;
+    margin-bottom:25px;
 }
 
 .table-header h2{
-    color: #c2185b;
-}
-
-.btn-tambah{
-    padding: 12px 20px;
-
-    background: #c2185b;
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 8px;
-
-    font-weight: bold;
+    color:#c2185b;
 }
 
 table{
-    width: 100%;
-
-    border-collapse: collapse;
+    width:100%;
+    border-collapse:collapse;
 }
 
 th{
-    background: #c2185b;
-    color: white;
-
-    padding: 15px;
-
-    text-align: center;
+    background:#c2185b;
+    color:white;
+    padding:18px;
 }
 
 td{
-    padding: 15px;
-
-    border-bottom: 1px solid #eee;
-
-    text-align: center;
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #eee;
 }
 
 tr:hover{
-    background: #fff1f6;
-}
-
-.gambar{
-    width: 90px;
-    height: 90px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-}
-
-.edit{
-    padding: 8px 14px;
-
-    background: #2196f3;
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 6px;
-
-    margin-right: 8px;
-}
-
-.hapus{
-    padding: 8px 14px;
-
-    background: #e53935;
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 6px;
-}
-
-.form-box{
-    max-width: 700px;
-
-    margin: auto;
-
-    background: white;
-
-    padding: 35px;
-
-    border-radius: 14px;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-label{
-    display: block;
-
-    font-weight: bold;
-
-    margin-bottom: 8px;
-    margin-top: 18px;
-}
-
-input,
-textarea{
-    width: 100%;
-
-    padding: 14px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 8px;
-}
-
-textarea{
-    height: 120px;
-
-    resize: none;
-}
-
-.btn-simpan{
-    width: 100%;
-
-    padding: 15px;
-
-    margin-top: 25px;
-
-    border: none;
-
-    background: #c2185b;
-    color: white;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-.btn-simpan:hover{
-    background: #9b174c;
-}
-
-.preview{
-    width: 180px;
-    height: 180px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-    border: 2px solid #eee;
-}
-
-/* =========================
-   DATA PELANGGAN
-========================= */
-
-.table-box{
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-.table-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.table-header h2{
-    color: #c2185b;
-    font-size: 26px;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th{
-    background: #c2185b;
-    color: white;
-    padding: 16px;
-    text-align: center;
-}
-
-td{
-    padding: 16px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-tr:hover{
-    background: #fff1f6;
-}
-
-.hapus{
-    background: #e53935;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hapus:hover{
-    background: #c62828;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width: 900px){
-
-    table{
-        font-size: 14px;
-    }
-
-    th,
-    td{
-        padding: 10px;
-    }
-
-    .table-box{
-        overflow-x: auto;
-    }
-
+    background:#fff4f8;
 }
 
 .status{
-    background: #fde8f1;
-    color: #c2185b;
+    background:#ffe5ef;
+    color:#c2185b;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
 
-    padding: 8px 14px;
-
-    border-radius: 20px;
-
-    font-size: 14px;
-    font-weight: bold;
+.edit{
+    background:#2196f3;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    display:inline-block;
 }
 
 .btn-status{
-    padding: 8px 14px;
-
-    background: #4caf50;
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 6px;
-
-    margin-left: 8px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    display:inline-block;
+    margin:0 5px;
 }
 
-.btn-status:hover{
-    background: #388e3c;
+.hapus{
+    background:#f44336;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    display:inline-block;
 }
 
-.detail-box{
-    background: white;
-
-    padding: 35px;
-
-    border-radius: 14px;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+footer{
+    text-align:center;
+    padding:25px;
+    color:#666;
+    margin-top:30px;
 }
-
-.info-box{
-    margin-bottom: 35px;
-}
-
-.info-box h2{
-    color: #c2185b;
-
-    margin-bottom: 20px;
-}
-
-.info-box p{
-    margin-bottom: 12px;
-
-    font-size: 17px;
-}
-
-.btn-box{
-    margin-top: 30px;
-
-    display: flex;
-    gap: 15px;
-}
-
-.btn-kembali{
-    padding: 12px 22px;
-
-    background: #777;
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 8px;
-
-    font-weight: bold;
-}
-
-.btn-kembali:hover{
-    background: #555;
-}
-
-select{
-    width: 100%;
-
-    padding: 14px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 8px;
-
-    margin-top: 5px;
-}
+</style>

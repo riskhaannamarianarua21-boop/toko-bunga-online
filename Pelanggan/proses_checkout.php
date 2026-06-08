@@ -2,8 +2,6 @@
 session_start();
 include "../koneksi.php";
 
-/** @var mysqli $conn */
-
 if(!isset($_SESSION['status_login'])){
     header("location:../login.php");
     exit;
@@ -20,7 +18,7 @@ WHERE keranjang.id_pelanggan='$id_pelanggan'");
 if(mysqli_num_rows($keranjang) == 0){
     echo "<script>
         alert('Keranjang masih kosong');
-        location.href='produk.php';
+        location.href='keranjang.php';
     </script>";
     exit;
 }
@@ -31,9 +29,12 @@ while($row = mysqli_fetch_assoc($keranjang)){
     $total += $row['harga'] * $row['qty'];
 }
 
-mysqli_query($conn,
-"INSERT INTO transaksi (id_pelanggan, tanggal, total, status)
-VALUES ('$id_pelanggan', '$tanggal', '$total', 'Menunggu Pembayaran')");
+$sql = "INSERT INTO transaksi (id_pelanggan, tanggal, total, status)
+VALUES ('$id_pelanggan', '$tanggal', '$total', 'Menunggu Pembayaran')";
+
+if(!mysqli_query($conn, $sql)){
+    die("Error transaksi: ".mysqli_error($conn));
+}
 
 $id_transaksi = mysqli_insert_id($conn);
 

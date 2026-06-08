@@ -2,8 +2,6 @@
 session_start();
 include "../koneksi.php";
 
-/** @var mysqli $conn */
-
 if(!isset($_SESSION['status_login'])){
     header("location:../login.php");
     exit;

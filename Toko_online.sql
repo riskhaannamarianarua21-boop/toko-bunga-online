@@ -1,3 +1,5 @@
+
+
 -- =========================
 -- TABEL PELANGGAN
 -- =========================
@@ -32,7 +34,7 @@ CREATE TABLE produk (
     harga INT NOT NULL,
     stok INT NOT NULL,
     deskripsi TEXT NOT NULL,
-    gambar VARCHAR(255) NOT NULL
+    foto_produk VARCHAR(255) NOT NULL
 );
 
 -- =========================
@@ -106,7 +108,7 @@ VALUES
 -- =========================
 
 INSERT INTO produk
-(nama_produk, harga, stok, deskripsi, gambar)
+(nama_produk, harga, stok, deskripsi, foto_produk)
 
 VALUES
 

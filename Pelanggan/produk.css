@@ -227,3 +227,149 @@ footer{
     background: #fde8f1;
     color: #c2185b;
 }
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media screen and (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+        text-align:center;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .search-form{
+        width:100%;
+        justify-content:center;
+        margin-bottom:10px;
+    }
+
+    .search-form input{
+        width:250px;
+    }
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .produk-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+        padding:20px;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width:480px){
+
+    header{
+        padding:15px;
+    }
+
+    .logo{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .flower{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo p{
+        font-size:13px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .search-form{
+        width:100%;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .search-form input{
+        width:100%;
+    }
+
+    .search-form button,
+    .btn-reset{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .produk-container{
+        grid-template-columns:1fr;
+        padding:15px;
+        gap:15px;
+    }
+
+    .card img{
+        width:100%;
+        height:auto;
+    }
+
+    .card-body h3{
+        font-size:18px;
+    }
+
+    .harga{
+        font-size:16px;
+    }
+
+    .deskripsi{
+        font-size:14px;
+    }
+
+    .btn{
+        width:100%;
+        display:block;
+        text-align:center;
+    }
+
+    footer{
+        font-size:13px;
+        padding:15px;
+        text-align:center;
+    }
+}

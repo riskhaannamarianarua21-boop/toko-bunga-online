@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background: #fff7fb;
+    color: #333;
 }
 
 header {
@@ -23,7 +24,6 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: -60px;
 }
 
 .flower {
@@ -42,31 +42,9 @@ header {
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 22px;
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-nav a:hover {
-    background-color: #fde8f1;
-    color: #c2185b;
-}
-
-nav a.active {
-    background-color: #c2185b;
-    color: white;
-}
-
-.cart {
-    padding: 10px 22px;
-    border: 1px solid #d6336c;
-    background: white;
-    color: #c2185b;
-    border-radius: 8px;
     font-weight: bold;
 }
 
@@ -75,14 +53,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 40px 0;
+    padding: 20px 40px;
 }
 
 .card {
     width: 900px;
-    max-height: 620px;
-    background: white;
     display: flex;
+    background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -91,19 +68,19 @@ main {
 .left {
     width: 45%;
     background: #fde8f1;
-    padding: 40px 40px;
+    padding: 40px;
 }
 
 .left h1 {
     color: #c2185b;
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .garis {
-    width: 50px;
+    width: 45px;
     height: 3px;
     background: #d6336c;
-    margin: 18px 0;
+    margin: 20px 0;
 }
 
 .left p {
@@ -123,9 +100,9 @@ main {
 
 .right h2 {
     color: #c2185b;
-    font-size: 28px;
-    margin-bottom: 25px;
     text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
 }
 
 label {
@@ -137,7 +114,7 @@ label {
 input {
     width: 100%;
     padding: 14px;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 15px;
@@ -147,16 +124,12 @@ input {
     width: 100%;
     padding: 15px;
     background: #c2185b;
-    color: white;
     border: none;
     border-radius: 8px;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.btn:hover {
-    background: #9b174c;
 }
 
 .atau {
@@ -164,16 +137,13 @@ input {
     align-items: center;
     gap: 15px;
     margin: 25px 0;
+    color: #777;
 }
 
 .atau span {
     flex: 1;
     height: 1px;
     background: #ddd;
-}
-
-.atau p {
-    color: #777;
 }
 
 .login {
@@ -183,34 +153,104 @@ input {
 .login a {
     color: #c2185b;
     font-weight: bold;
+    text-decoration: none;
 }
 
-footer {
-    height: 45px;
-    margin-top: 0;
-    background: #9b174c;
+footer{
+    background: #c2185b;
     color: white;
+    padding: 15px;
+    margin-top: auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35px;
-    font-size: 15px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.password-box {
+.password-box{
     position: relative;
 }
 
-.password-box input {
+.password-box input{
+    width: 100%;
     padding-right: 45px;
-    margin-bottom: 22px;
 }
 
-.toggle-password {
-    position: absolute;
-    right: 15px;
-    top: 13px;
-    cursor: pointer;
-    font-size: 18px;
-    color: #777;
+.toggle-password{
+    position:absolute;
+    right:15px;
+    top:11px;
+    cursor:pointer;
+    font-size:16px;
+    color:#666;
+}
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .card{
+        display:flex;
+        flex-direction:column !important;
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+    .left,
+    .right{
+        width:100% !important;
+        max-width:100% !important;
+        padding:20px;
+    }
+
+    .left h1{
+        font-size:28px;
+        text-align:center;
+    }
+
+    .left p{
+        text-align:center;
+    }
+
+    .left img{
+        width:150px;
+        max-width:100%;
+        margin:auto;
+        display:block;
+    }
+
+    header{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height:auto;
+        padding:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0;
+    }
+
+    input,
+    .btn{
+        width:100%;
+    }
+
+    footer{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        gap:10px;
+    }
 }

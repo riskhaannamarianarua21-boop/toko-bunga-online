@@ -1,4 +1,4 @@
 <?php
-header("location: login.php");
+header("Location: anggota.php");
 exit;
 ?>

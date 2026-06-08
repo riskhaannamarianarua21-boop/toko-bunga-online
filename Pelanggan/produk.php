@@ -27,6 +27,13 @@ if (!$produk) {
     <meta charset="UTF-8">
     <title>Produk Toko Bunga</title>
     <link rel="stylesheet" href="produk.css">
+    
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+    
 </head>
 
 <body>
@@ -71,7 +78,7 @@ if (!$produk) {
                 <div class="card">
 
                     <img
-                        src="../gambar_produk/<?php echo htmlspecialchars($row['gambar']); ?>"
+                        src="../gambar_produk/<?php echo htmlspecialchars($row['foto_produk']); ?>"
                         alt="<?php echo htmlspecialchars($row['nama_produk']); ?>">
 
                     <div class="card-body">

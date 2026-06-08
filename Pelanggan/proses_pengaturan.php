@@ -14,7 +14,7 @@ $id_pelanggan = $_SESSION['id_pelanggan'];
 $nama_pelanggan = $_POST['nama_pelanggan'];
 $username = $_POST['username'];
 $alamat = $_POST['alamat'];
-$no_telp = $_POST['no_telp'];
+$telephone = $_POST['telephone'];
 $password = $_POST['password'];
 
 if($password != ""){
@@ -22,7 +22,7 @@ if($password != ""){
         nama_pelanggan='$nama_pelanggan',
         username='$username',
         alamat='$alamat',
-        no_telp='$no_telp',
+        telephone='$telephone',
         password='$password'
         WHERE id_pelanggan='$id_pelanggan'");
 }else{
@@ -30,7 +30,7 @@ if($password != ""){
         nama_pelanggan='$nama_pelanggan',
         username='$username',
         alamat='$alamat',
-        no_telp='$no_telp'
+        telephone='$telephone'
         WHERE id_pelanggan='$id_pelanggan'");
 }
 

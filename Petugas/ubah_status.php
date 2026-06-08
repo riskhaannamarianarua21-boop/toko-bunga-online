@@ -53,8 +53,143 @@ if(isset($_POST['update'])){
 <head>
     <meta charset="UTF-8">
     <title>Ubah Status</title>
+    
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
 
-    <link rel="stylesheet" href="admin.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#fff7fb;
+}
+
+header{
+    background:white;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.flower{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#c2185b;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+}
+
+.logo h2{
+    color:#c2185b;
+}
+
+.logo p{
+    color:#666;
+    font-size:14px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c2185b;
+}
+
+.logout{
+    color:red;
+}
+
+.hero{
+    background:#f7dfe9;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    color:#c2185b;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#555;
+}
+
+.form-box{
+    width:500px;
+    max-width:90%;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.form-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#444;
+}
+
+.form-box input,
+.form-box select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+}
+
+.btn-simpan{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#c2185b;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-simpan:hover{
+    background:#a3154d;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    color:#666;
+}
+</style>
 </head>
 <body>
 
@@ -154,6 +289,7 @@ if(isset($_POST['update'])){
     <p>© 2026 Toko Bunga - Halaman Petugas</p>
 
 </footer>
+        <script src="assets/js/script.js"></script>
 
 </body>
 </html>

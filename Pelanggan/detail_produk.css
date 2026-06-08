@@ -252,3 +252,123 @@ footer{
 .aksi-detail .btn{
     border-bottom-right-radius: 12px;
 }
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media screen and (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+        padding:20px;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    .detail-card{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .gambar,
+    .detail-info{
+        width:100%;
+    }
+
+    .detail-info h1{
+        font-size:30px;
+    }
+
+    .harga{
+        font-size:24px;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width:480px){
+
+    header{
+        padding:15px;
+    }
+
+    .logo{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .flower{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo p{
+        font-size:13px;
+    }
+
+    .detail-container{
+        padding:15px;
+    }
+
+    .detail-card{
+        padding:15px;
+        border-radius:15px;
+    }
+
+    .gambar img{
+        width:100%;
+        height:auto;
+    }
+
+    .detail-info h1{
+        font-size:24px;
+    }
+
+    .harga{
+        font-size:22px;
+    }
+
+    .info-produk{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .qty{
+        width:100%;
+    }
+
+    .aksi-detail{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .btn,
+    .btn-kembali{
+        width:100%;
+        text-align:center;
+    }
+
+    .deskripsi p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    footer{
+        font-size:13px;
+        padding:15px;
+        text-align:center;
+    }
+}

@@ -229,3 +229,131 @@ td:last-child{
     background: #fde8f1;
     color: #c2185b;
 }
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media screen and (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+        padding:20px;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0;
+    }
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .cart-box{
+        width:95%;
+        margin:auto;
+        padding:20px;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width:480px){
+
+    header{
+        padding:15px;
+    }
+
+    .logo{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    .flower{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo p{
+        font-size:13px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .cart-box{
+        width:95%;
+        padding:15px;
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:750px;
+    }
+
+    th,
+    td{
+        padding:10px;
+        font-size:13px;
+    }
+
+    .cart-action{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+        margin-top:20px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+    }
+
+    footer{
+        text-align:center;
+        padding:15px;
+        font-size:13px;
+    }
+}

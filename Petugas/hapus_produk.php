@@ -16,7 +16,7 @@ $data = mysqli_fetch_assoc($query);
 
 if($data){
 
-    $gambar = "../gambar_produk/".$data['gambar'];
+    $gambar = "../foto_produk/".$data['gambar'];
 
     if(file_exists($gambar)){
         unlink($gambar);

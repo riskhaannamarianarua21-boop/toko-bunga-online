@@ -18,9 +18,17 @@ $data = mysqli_fetch_assoc($query);
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <head>
     <meta charset="UTF-8">
     <title>Pengaturan Akun</title>
     <link rel="stylesheet" href="pengaturan.css">
+        
+        <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+</head>
 </head>
 <body>
 
@@ -38,7 +46,7 @@ $data = mysqli_fetch_assoc($query);
         <input type="text" name="alamat" value="<?php echo $data['alamat']; ?>" required>
 
         <label>Nomor Telepon</label>
-        <input type="text" name="no_telp" value="<?php echo $data['no_telp']; ?>" required>
+        <input type="text" name="telephone" value="<?php echo $data['telephone']; ?>" required>
 
         <label>Password Baru</label>
         <input type="password" name="password" placeholder="Kosongkan jika tidak ingin ganti">

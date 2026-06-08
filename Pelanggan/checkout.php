@@ -34,9 +34,18 @@ if ($items != '') {
 <html lang="id">
 
 <head>
+    <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="checkout.css">
+        
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+</head>
 </head>
 
 <body>
@@ -99,23 +108,22 @@ if ($items != '') {
                 </tr>
             </table>
 
-            <div class="checkout-wa">
+           <div class="checkout-wa">
 
-                <h3>Checkout Pesanan</h3>
+    <h3>Checkout Pesanan</h3>
 
-                <p>
-                    Klik tombol di bawah untuk melanjutkan pesanan melalui WhatsApp admin.
-                </p>
+    <p>
+        Klik tombol di bawah untuk menyimpan transaksi.
+    </p>
 
-                <a href="https://wa.me/6285344119767?text=Halo Admin,%20saya%20<?php echo $_SESSION['nama_pelanggan']; ?>%20ingin%20checkout%20pesanan%20bunga.%20Total%20belanja%20saya%20Rp<?php echo number_format($total, 0, ',', '.'); ?>"
-                    class="btn-checkout"
-                    target="_blank">
+    <a href="proses_checkout.php"
+        class="btn-checkout">
 
-                    Checkout via WhatsApp
+        Checkout Sekarang
 
-                </a>
+    </a>
 
-            </div>
+</div>
 
         </div>
     </main>
